@@ -33,8 +33,15 @@
           </div>
 
           <div class="dados-resposta hidden" id="dados-candidato">
-            <p><span class="label">Nome:</span> <strong id="nome-cand">--</strong></p>
-            <p><span class="label">Partido:</span> <span id="partido-cand">--</span></p>
+            <p>
+              <span class="label">Nome:</span>
+              <strong id="nome-cand">--</strong>
+            </p>
+
+            <p>
+              <span class="label">Partido:</span>
+              <span id="partido-cand">--</span>
+            </p>
           </div>
 
           <div class="mensagem-voto hidden" id="msg-voto">
@@ -47,6 +54,7 @@
           <div class="moldura-foto">
             <img id="img-candidato" src="" alt="Foto do Candidato">
           </div>
+
           <span class="legenda-foto">Deputado Est.</span>
         </div>
       </div>
@@ -54,6 +62,7 @@
       <!-- RODAPÉ COM CONFIRMAÇÃO PISCANDO -->
       <div class="rodape-confirmacao">
         <div class="alerta-confirma">CONFIRME SEU VOTO</div>
+
         <div class="instrucoes">
           Aperte a tecla:<br>
           <strong>VERDE</strong> para <strong>CONFIRMAR</strong> este voto<br>
@@ -69,27 +78,43 @@
       <div class="marca-urna">MUNDO SENAI - ESTÂNCIA</div>
 
       <div class="teclas-numericas">
-        <button class="btn-num">1</button>
-        <button class="btn-num">2</button>
-        <button class="btn-num">3</button>
-        <button class="btn-num">4</button>
-        <button class="btn-num">5</button>
-        <button class="btn-num">6</button>
-        <button class="btn-num">7</button>
-        <button class="btn-num">8</button>
-        <button class="btn-num">9</button>
-        <button class="btn-num btn-zero">0</button>
+        <button type="button" class="btn-num">1</button>
+        <button type="button" class="btn-num">2</button>
+        <button type="button" class="btn-num">3</button>
+        <button type="button" class="btn-num">4</button>
+        <button type="button" class="btn-num">5</button>
+        <button type="button" class="btn-num">6</button>
+        <button type="button" class="btn-num">7</button>
+        <button type="button" class="btn-num">8</button>
+        <button type="button" class="btn-num">9</button>
+        <button type="button" class="btn-num btn-zero">0</button>
       </div>
 
       <div class="teclas-acoes">
-        <button class="btn-acao btn-branco">BRANCO</button>
-        <button class="btn-acao btn-corrige">CORRIGE</button>
-        <button class="btn-acao btn-confirma">CONFIRMA</button>
+        <button type="button" class="btn-acao btn-branco">
+          BRANCO
+        </button>
+
+        <button type="button" class="btn-acao btn-corrige">
+          CORRIGE
+        </button>
+
+        <button type="button" class="btn-acao btn-confirma">
+          CONFIRMA
+        </button>
       </div>
 
     </div>
 
   </div>
+
+  <!-- SOM DA TECLA -->
+  <audio id="som-tecla" preload="auto">
+    <source src="../audio/tecla-urna.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- JAVASCRIPT DA URNA -->
+  <script src="../js/urna.js"></script>
 
 </body>
 </html>
